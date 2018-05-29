@@ -38,7 +38,7 @@ def delta_images(t0, t1, t2):
     return d1
 
 def motion_detection(t_minus, t_now, t_plus):
-    delta_view = delta_images(t_minus, t_now, t_plus)
+    delta_view = delta_images(t_minus, t_now, t_plus, screen)
     retval, delta_view = cv2.threshold(delta_view, 16, 255, 3)
     cv2.normalize(delta_view, delta_view, 0, 255, cv2.NORM_MINMAX)
     img_count_view = cv2.cvtColor(delta_view, cv2.COLOR_RGB2GRAY)
