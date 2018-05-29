@@ -98,6 +98,7 @@ def main(file_name, starting_value):
                     print('SAVED')
                     training_data = []
                     starting_value += 1
+  ## NEED CHANGE PATH HERE!
                     file_name = 'X:/pygta5/phase7-larger-color/training_data-{}.npy'.format(starting_value)
 
                     
