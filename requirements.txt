@@ -7,3 +7,4 @@ tflearn
 tqdm
 h5py
 scipy
+curses
